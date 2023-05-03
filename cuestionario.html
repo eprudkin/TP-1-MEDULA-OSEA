@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cuestionario_estilo.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Cuestionario</title>
+    <link rel="shortcut icon" href="imagenes/Icono.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a78a2d79be.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="Logo">
+         <img src="imagenes/logo completo.png" width="150" height="90" alt="Logo fundación"> 
+         <h2 class="nombre_fundacion">Fundación Médula Ósea</h2>  
+        </div>
+        <div>
+        <nav>
+            <a href="Quienes somos.html" class="nav_link">La Fundación</a>
+            <a href="Pagina central.html"class="nav_link">Sobre el transplante de médula ósea </a>
+            <a href="cuestionario.html"class="nav_link">¿Podés donar Medula Osea?</a>
+            <a href="Formulario de contacto.html"class="nav_link">Escribinos</a>
+
+        </nav>
+    </div>
+    </header>
+<h2>¿Cómo saber si eres compatible para ser donante de medula ósea?
+</h2>
+
+<div class="container">
+    <section id="p0"    
+        <h3>1-¿Tienes entre 18 y 60 años?
+        </h3>
+        <label>
+            <input type="radio" value="1" name="p0" onclick="respuesta (0,this)"> SI
+        </label>
+        <label>
+            <input type="radio" value="2" name="p0"onclick="respuesta (0,this)"> NO
+        </label>
+    </section>
+  
+
+
+    <section id="p1"    
+        <h3>2-¿Pesas más de 60 kilos?
+        </h3>
+        <label>
+            <input type="radio" value="1" name="p1"onclick="respuesta (1,this)"> SI
+        </label>
+        <label>
+            <input type="radio" value="2" name="p1"onclick="respuesta (1,this)"> NO
+        </label>
+    </section>
+
+    <section id="p2"    
+        <h3>3-¿Recibiste alguna vez un trasplante?
+        </h3>
+        <label>
+            <input type="radio" value="1" name="p2"onclick="respuesta (2,this)"> SI
+        </label>
+        <label>
+            <input type="radio" value="2" name="p2"onclick="respuesta (2,this)"> NO
+        </label>
+    </section>
+
+    <section id="p3"    
+        <h3>4-¿Tienes alguna enfermedad preexistente que pueda ser contagiada? (Hepatitis B o C, HIV, otras)
+        </h3>
+        <label>
+            <input type="radio" value="1" name="p3"onclick="respuesta (3,this)"> SI
+        </label>
+        <label>
+            <input type="radio" value="2" name="p3"onclick="respuesta (3,this)"> NO
+        </label>
+    </section>
+
+    <section id="p4"    
+        <h3>5-¿Tienes alguna enfermedad autoinmune?
+        </h3>
+        <label>
+            <input type="radio" value="1" name="p4"onclick="respuesta (4,this)"> SI
+        </label>
+        <label>
+            <input type="radio" value="2" name="p4"onclick="respuesta (4,this)"> NO
+        </label>
+    </section>
+
+    <section id="p5"    
+        <h3>6-¿Sufres de enfermedades circulatorias, renales, hepáticas, pulmonares o hematológicas?
+
+        </h3>
+        <label>
+            <input type="radio" value="1" name="p5"onclick="respuesta (5,this)"> SI
+        </label>
+        <label>
+            <input type="radio" value="2" name="p5"onclick="respuesta (5,this)"> NO
+        </label>
+    </section>
+
+    <section id="p6"    
+        <h3>7-¿Eres diabetico o hipertenso?
+        </h3>
+        <label>
+            <input type="radio" value="1" name="p6"onclick="respuesta (6,this)"> SI
+        </label>
+        <label>
+            <input type="radio" value="2" name="p6"onclick="respuesta (6,this)"> NO
+        </label>
+    </section>
+
+    <section id="p7"    
+        <h3>8-¿Eres alérgico a los anestésicos o a la penicilina?
+        </h3>
+        <label>
+            <input type="radio" value="1" name="p7"onclick="respuesta (7,this)"> SI
+        </label>
+        <label>
+            <input type="radio" value="2" name="p7"onclick="respuesta (7,this)"> NO
+        </label>
+    </section>
+
+    <section id="p8"    
+        <h3>9-¿Ya donaste médula ósea este año?
+        </h3>
+        <label>
+            <input type="radio" value="1" name="p8"onclick="respuesta (8,this)"> SI
+        </label>
+        <label>
+            <input type="radio" value="2" name="p8"onclick="respuesta (8,this)"> NO
+        </label>
+    </section>
+
+
+<button onclick="Ver resultado()">Ver resultado </button>
+<h3>Cantidad de respuestas positivas (SI): <span id="resultado" </h3>
+
+<h4>En caso que las respuestas sean todas SI, podes ser tranquilamente donante</h4>
+<h4>En caso que una o más respuestas sean NO, es probable que no puedas donar, sugerimos te acerques con tus dudas a tu clinico medico.</h4>
+
+
+</div>
+
+<script src="cuestionario_script.js"
+
+<footer>
+    <br>
+
+    <p>Seguinos en nuestras redes sociales:</p>
+    <center>
+        <a href="http://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="http://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+
+
+        <center>Desarrollado por: Andreina Angulo, Rocío Britos,
+            <br> De Los Santos y Ekaterina Prudkin
+
+        </center>
+        <br><br>
+        <center>Copyright 2030
+            <br>Comisión 23034 Full Stack Python
+        </center>
+    </center>
+    <br>
+
+
+</footer>
+</body> 
+
+
+</html>
