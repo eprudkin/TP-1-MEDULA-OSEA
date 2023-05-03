@@ -73,3 +73,49 @@ nav a:hover{
      95%{ margin-left: -400%;}
     100%{ margin-left: -400%;}
 }
+/* //////////////INICIO FORMULARIO ROCIO///////////////// */
+#formulario {
+
+	box-sizing: border-box;
+	font-family: 'Dosis', sans-serif;
+	display: flex;
+	flex-direction: column;
+	gap: 10vh;
+	
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 5vh;
+	width: 60%;
+}
+
+.form .container {
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+}
+
+.form .container input {
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid grey;
+}
+
+.enviar-btn {
+	padding: 10px;
+	width: 150px;
+	background-color: rgb(244, 183, 72);
+	border: 2px rgb(51, 255, 0) solid;
+	border-radius: 5px;
+	gap: 5vh;
+}
+
+.enviar-btn:hover {
+	transition: ease-in-out;
+	background-color: orange;
+	border: 1px orange solid;
+
+}
+/* //////////////FIN FORMULARIO ROCIO///////////////// */
