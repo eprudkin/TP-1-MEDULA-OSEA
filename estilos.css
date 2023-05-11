@@ -20,8 +20,9 @@ padding: 30px;
     display:flex;
 }
 body{
-    background-color: cadetblue;
+    background-color: #dbecf4;
     margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a{
@@ -39,39 +40,36 @@ nav a:hover{
 }
 
 .slider{
-   width: 40%;
+   width: 80%;
     margin:auto;
     overflow: hidden;
 }
 .slider ul{
     padding: 10px;
     display: flex;
-    width: 500%;
+    width: 400%;
     animation: cambio 20s infinite alternate;
     
 }
 .slider li{
     list-style: none;
-    width: 100%;
+    width: 80%;
 }
 .slider img{
-    width: 100%;
+    width: 80%;
 }
 @keyframes cambio{
     0%{ margin-left: 0%;}
     15%{ margin-left: 0%;}
 
-    25%{ margin-left: -100%;}
+    20%{ margin-left: -100%;}
     40%{ margin-left: -100%;}
 
     50%{ margin-left: -200%;}
     65%{ margin-left: -200%;}
 
     75%{ margin-left: -300%;}
-    90%{ margin-left: -300%;}
-
-     95%{ margin-left: -400%;}
-    100%{ margin-left: -400%;}
+    100%{ margin-left: -300%;}
 }
 /* //////////////INICIO FORMULARIO ROCIO///////////////// */
 #formulario {
