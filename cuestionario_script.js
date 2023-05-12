@@ -1,5 +1,5 @@
 //arreglo que contiene las respuestas correctas
-let correctas = [1,1,1,1,1,1,1,1,1]
+let correctas = [1, 1, ...Array(7).fill(2)];
 //arreglo donde se guardan las respuestas del usuario
 let opcion_elegida = [];
 let cantidad_correctas=0;
@@ -27,16 +27,21 @@ function respuesta (num_pregunta, seleccionada){
 
 //funcion que compara los arreglos para saber cuantas estuvieron correctas
 function verResultado() {
-    
-    for(let i = 0; i < correctas.length; i++) {
-        if (opcion_elegida[i] !== undefined && correctas[i] === parseInt(opcion_elegida[i])) {
-            cantidad_correctas++;
-          }
+    let cantidad_si = 0;
+    let cantidad_no = 0;
+  
+    for (let i = 0; i < correctas.length; i++) {
+      if (opcion_elegida[i] !== undefined) {
+        if (parseInt(opcion_elegida[i]) === 1) {
+          cantidad_si++;
+        } else if (parseInt(opcion_elegida[i]) === 2) {
+          cantidad_no++;
+        }
+      }
     }
+  
     const resultadoSpan = document.getElementById("resultado");
-    resultadoSpan.innerText = "Cantidad de respuestas positivas (SI): " + cantidad_correctas;
-    resultadoSpan.textContent = cantidad_correctas;
-    const resultadoText = resultadoSpan.innerText;
-    const resultado = parseInt(resultadoText);
-   
-}
+    resultadoSpan.innerText = `Cantidad de respuestas SI: ${cantidad_si} | Cantidad de respuestas NO: ${cantidad_no}`;
+  }
+  
+
