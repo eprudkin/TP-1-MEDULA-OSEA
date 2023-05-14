@@ -1,0 +1,154 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,300;0,700;1,500&display=swap');
+
+* {box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: white;
+    align-items: center;
+    margin-top: auto;
+padding: 30px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    text-size-adjust: 20px;
+}
+
+.nav_link {
+    border: 1px solid #cadeec; 
+    padding: 0 5px; 
+    background-color:  #cadeec;
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-family: 'Lato', sans-serif; 
+    border-radius: 5px; 
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.logo img{
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit
+}
+
+nav a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: coral;
+}
+
+.slider{
+    width: 100%;
+     margin:auto;
+     overflow: hidden;
+}
+
+.slider ul{
+     padding: 10px;
+     display: flex;
+     width: 400%;
+     animation: cambio 20s infinite alternate;
+}
+
+.slider li{
+     list-style: none;
+     width: 80%;
+}
+
+.slider img{
+     width: 80%;
+}
+
+@keyframes cambio{
+     0%{ margin-left: 0%;}
+     15%{ margin-left: 0%;}
+ 
+     20%{ margin-left: -100%;}
+     40%{ margin-left: -100%;}
+ 
+     50%{ margin-left: -200%;}
+     65%{ margin-left: -200%;}
+ 
+     75%{ margin-left: -300%;}
+     100%{ margin-left: -300%;}
+}
+
+body{
+    background-color: #dbecf4;
+    margin: 0;
+    font-family:'Lato', sans-serif;
+    min-height: 100%;
+}
+
+.estadisticas1 {
+    background-color: #91aec4;
+    border-radius: 15px;
+    width: 30%;
+    margin: 10px;
+}
+.estadisticas2 {
+    background-color: #91aec4;
+    border-radius: 15px;
+    width: 30%;
+    margin: 10px;
+}
+
+.estadisticas3{
+    background-color: #91aec4;
+    border-radius: 15px;
+    width: 30%;
+    margin: 10px;
+}
+
+.testimonios {
+    background-color: #91aec4;
+    border-radius: 20px;
+    width: 70%;
+    margin: 10px;
+}
+
+.footer {
+    background-color: white;
+}
+
+
+.cajas {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 700px) {
+  header, nav, .slider, .cajas{
+    flex-direction: column;
+  }  
+    
+}
