@@ -10,7 +10,7 @@
 .header{
     display:flex;
     justify-content: space-between;
-    height: 100px;
+    min-height: 100px;
     background-color: white;
     align-items: center;
     margin-top: auto;
@@ -64,6 +64,15 @@ nav a:hover{
     color: coral;
 }
 
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding:10px 0px;
+    }
+}
+
 .slider{
     width: 100%;
      margin:auto;
@@ -84,6 +93,8 @@ nav a:hover{
 
 .slider img{
      width: 80%;
+     border-radius: 15px;
+     box-shadow: 0px 3px 5px rgba( 15, 15, 15,.5);
 }
 
 @keyframes cambio{
