@@ -1,5 +1,3 @@
-/* Fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,300;0,700;1,500&display=swap');
 
 * {box-sizing: border-box;
@@ -21,12 +19,11 @@
 padding: 30px;
 }
 
-
-ul {
+.header .nav .barra {
     list-style: none;
 }
 
-li {
+.header .nav li {
     display: inline;
     padding: 10px;
     text-size-adjust: 20px;
@@ -77,84 +74,22 @@ nav a:hover{
     }
 }
 
-.slider{
-    width: 100%;
-    margin-top: 30px;
-     margin:auto;
-     overflow: hidden;
-}
-
-.slider ul{
-     padding: 10px;
-     display: flex;
-     width: 400%;
-     animation: cambio 20s infinite alternate;
-}
-
-.slider li{
-     list-style: none;
-     width: 80%;
-}
-
-.slider img{
-    margin-top: 30px;
-     width: 80%;
-     border-radius: 15px;
-     box-shadow: 0px 3px 5px rgba( 15, 15, 15,.5);
-}
-
-@keyframes cambio{
-     0%{ margin-left: 0%;}
-     15%{ margin-left: 0%;}
- 
-     20%{ margin-left: -100%;}
-     40%{ margin-left: -100%;}
- 
-     50%{ margin-left: -200%;}
-     65%{ margin-left: -200%;}
- 
-     75%{ margin-left: -300%;}
-     100%{ margin-left: -300%;}
-}
-
 body{
     background-color: #dbecf4;
     margin: 0;
     min-height: 100%;
 }
 
-
-
-.estadisticas1 {
-    background-color: #91aec4;
+.imagen img {
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 20px;
-    margin-bottom: 20px;
-    width: 330px;
-}
-.estadisticas2 {
-    background-color: #91aec4;
-    border-radius: 15px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: 330px;
 }
 
-.estadisticas3{
+.info {
     background-color: #91aec4;
     border-radius: 15px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: 330px;
-}
-
-.testimonios {
-    background-color: #91aec4;
-    border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 15px;
     margin-right: 20px;
 }
@@ -200,18 +135,9 @@ body{
     text-align: center;
 }
 
-
-
 .cajas {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     flex-direction: row;
-}
-
-@media screen and (max-width: 700px) {
-  header, nav, .slider, .cajas{
-    flex-direction: column;
-  }  
-    
 }
