@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Contacto</title>
+    <link rel="stylesheet" href="Formulario_estilo.css">
+    <title>Fundación Medula Osea - Contacto</title>
     <link rel="shortcut icon" href="imagenes/Icono.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a78a2d79be.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="Logo">
-         <img src="imagenes/logo completo.png" width="150" height="90" alt="Logo fundación"> 
-         <h2 class="nombre_fundacion">Fundación Médula Ósea</h2>  
+            <img src="imagenes/logo completo.png" width="150" height="90" alt="Logo fundación">
+            <h2 class="nombre_fundacion"></h2>
         </div>
+        
         <div>
-            <nav>
-                <a href="Home.html" class="nav_link"> Inicio</a>
-                <a href="Quienes somos.html" class="nav_link">¿Quiénes Somos?</a>
-                <a href="Medula.html"class="nav_link"> Donar Médula Ósea</a>
-                <a href="cuestionario.html" class="nav_link">¿Podés donar Medula Osea?</a>
-                <a href="Formulario de contacto.html" class="nav_link">Contacto</a>
-
+            <nav class="nav">
+                <ul class="barra">
+                <li><a href="Home.html" class="nav_link"> Inicio</a></li>
+                <li><a href="Quienes somos.html" class="nav_link">¿Quiénes Somos?</a></li>
+                <li><a href="Medula.html"class="nav_link"> Donar Médula Ósea</a></li>
+                <li><a href="cuestionario.html" class="nav_link">¿Podés donar Medula Osea?</a></li>
+                <li><a href="Formulario_de_contacto.html" class="nav_link">Contacto</a></li>
+                </ul>
             </nav>
-    </div>
+        </div>
     </header>
 
     <section id="formulario">
@@ -66,32 +68,51 @@
         </form>
     </section>
 
-    <h2>También te invitamos a que te acerques a nuestra clínica</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.077864939752!2d-58.4968719!3d-34.6021925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62566aedb35%3A0x2f37f65ff002a8!2sComuna%2011%2C%20Pedro%20Lozano%203313%2C%20C1417%20CABA!5e0!3m2!1ses-419!2sar!4v1683849141114!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <p>Pedro lozano 3313, CABA</p>
-<footer>
-    <br>
+    <section id="mapa">
 
-    <p>Seguinos en nuestras redes sociales:</p>
-    <center>
-        <a href="http://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-        <a href="http://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-        <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+         <h2>También te invitamos a que te acerques a nuestra clínica</h2>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.077864939752!2d-58.4968719!3d-34.6021925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62566aedb35%3A0x2f37f65ff002a8!2sComuna%2011%2C%20Pedro%20Lozano%203313%2C%20C1417%20CABA!5e0!3m2!1ses-419!2sar!4v1683849141114!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <p>Pedro lozano 3313, CABA</p>
+    </section>
 
+    <footer class="footer">
 
-        <center>Desarrollado por: Andreina Angulo, Rocío Britos,
-            <br> De Los Santos y Ekaterina Prudkin
-
-        </center>
-        <br><br>
-        <center>Copyright 2030
-            <br>Comisión 23034 Full Stack Python
-        </center>
-    </center>
-    <br>
-
-
-</footer>
+        <div class="grupo1">
+    
+             <div class="redes">
+                 <h5>Seguinos en nuestras redes sociales:</h5>
+    
+                <div class="redes1">
+                 <a href="http://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                 <a href="http://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            
+                 </div>
+              </div>  
+    
+             <div class="devs">
+                 <h5> Desarrollado por:</h5> 
+                    <p> Andreina Angulo</p> 
+                    <p>Rocío Britos</p>
+                    <p>Araceli De Los Santos</p> 
+                    <p>Ekaterina Prudkin</p>
+             </div>
+    
+    
+             <div class="clima">
+                 <h4 id="temperatura-valor"></h4>
+                  <h4 id="ubicacion"></h4>
+                 <img id="icono" src="" alt="" height="60" width="60" />
+                 <h4 id="temperatura-descripcion"></h4>
+                 <script src="api.js"></script>
+             </div>
+        </div>
+    
+        <div class="grupo2">
+            <small>&copy; 2023 <b>Comision 23034 Full Stack Python - Todos los derechos reservados</b></small>
+        </div>
+    
+        </footer>
 <script src="formulario_script.js"></script>
 </body>
 </html>

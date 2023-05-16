@@ -1,5 +1,3 @@
-/* Fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,300;0,700;1,500&display=swap');
 
 * {box-sizing: border-box;
@@ -38,6 +36,7 @@ li {
     background-color:  #cadeec;
     text-decoration: none; 
     text-transform: uppercase; 
+    font-family: 'Lato', sans-serif; 
     border-radius: 5px; 
 }
 
@@ -76,86 +75,84 @@ nav a:hover{
     }
 }
 
-.slider{
-    width: 100%;
-    margin-top: 30px;
-     margin:auto;
-     overflow: hidden;
-}
-
-.slider ul{
-     padding: 10px;
-     display: flex;
-     width: 400%;
-     animation: cambio 20s infinite alternate;
-}
-
-.slider li{
-     list-style: none;
-     width: 80%;
-}
-
-.slider img{
-    margin-top: 30px;
-     width: 80%;
-     border-radius: 15px;
-     box-shadow: 0px 3px 5px rgba( 15, 15, 15,.5);
-}
-
-@keyframes cambio{
-     0%{ margin-left: 0%;}
-     15%{ margin-left: 0%;}
- 
-     20%{ margin-left: -100%;}
-     40%{ margin-left: -100%;}
- 
-     50%{ margin-left: -200%;}
-     65%{ margin-left: -200%;}
- 
-     75%{ margin-left: -300%;}
-     100%{ margin-left: -300%;}
-}
-
 body{
     background-color: #dbecf4;
     margin: 0;
     min-height: 100%;
 }
 
+#formulario {
 
-
-.estadisticas1 {
-    background-color: #91aec4;
-    border-radius: 15px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: 330px;
-}
-.estadisticas2 {
-    background-color: #91aec4;
-    border-radius: 15px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: 330px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: 10vh;
+	
 }
 
-.estadisticas3{
+h1 {
     background-color: #91aec4;
-    border-radius: 15px;
     margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: 330px;
+    border-radius: 5px;
+    height: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+
 }
 
-.testimonios {
+.form {
+    display: flex;
+    background-color: white;
+    color: #999;
+    padding: 30px;
+    border-radius: 3px;
+    flex-direction: column;
+    gap: 5vh;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.form .container {
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+}
+
+.form .container input {
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid grey;
+}
+
+.enviar-btn {
+	padding: 10px;
+	width: 150px;
+	background-color: rgb(244, 183, 72);
+	border: 2px rgb(51, 255, 0) solid;
+	border-radius: 5px;
+	gap: 5vh;
+}
+
+.enviar-btn:hover {
+	transition: ease-in-out;
+	background-color: orange;
+	border: 1px orange solid;
+
+}
+
+#mapa {
     background-color: #91aec4;
-    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 400px;
+    border-radius: 15px;
+}
+
+iframe {
+    margin-left: 60px;
+    border-radius: 10px;
     margin-top: 20px;
-    margin-left: 15px;
-    margin-right: 20px;
 }
 
 .footer {
@@ -197,20 +194,4 @@ body{
 .footer .grupo2 {
     padding: 15px 10px;
     text-align: center;
-}
-
-
-
-.cajas {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    flex-direction: row;
-}
-
-@media screen and (max-width: 700px) {
-  header, nav, .slider, .cajas{
-    flex-direction: column;
-  }  
-    
 }
