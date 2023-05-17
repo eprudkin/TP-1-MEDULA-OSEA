@@ -137,20 +137,31 @@ h1 {
 .enviar-btn:hover {
 	transition: ease-in-out;
 	background-color: orange;
-	border: 1px orange solid;
+	border: 1px #ffa500 solid;
 
 }
 
 #mapa {
     background-color: #91aec4;
     margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 400px;
+    margin-left: 200px;
+    margin-right: 200px;
     border-radius: 15px;
 }
 
+#mapa h2 {
+    text-align: center;
+}
+
+#mapa p {
+    text-align:center;
+    text-size-adjust: 30px;
+    margin-top: 5px;
+}
+
 iframe {
-    margin-left: 60px;
+    margin-left: 130px;
+    margin-right: 150px;
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -165,7 +176,7 @@ iframe {
     margin: 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-gap: 30px;
     padding: 20px 0px;
     justify-content: space-between;
     align-items: center;
@@ -195,3 +206,4 @@ iframe {
     padding: 15px 10px;
     text-align: center;
 }
+
