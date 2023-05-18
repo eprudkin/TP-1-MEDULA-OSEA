@@ -132,6 +132,7 @@ body{
     margin-bottom: 20px;
     width: 330px;
 }
+
 .estadisticas2 {
     background-color: #91aec4;
     border-radius: 15px;
@@ -151,11 +152,31 @@ body{
 }
 
 .testimonios {
+    display: block;
     background-color: #91aec4;
     border-radius: 20px;
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 20px;
+}
+
+.testimonios h2 {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.testimonios u {
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.testimonios p {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 .footer {
@@ -209,7 +230,7 @@ body{
 }
 
 @media screen and (max-width: 700px) {
-  header, nav, .slider, .cajas{
+  header, nav, .slider, .cajas, footer {
     flex-direction: column;
   }  
     

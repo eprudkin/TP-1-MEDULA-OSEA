@@ -77,10 +77,20 @@ nav a:hover{
     }
 }
 
+body{
+    background-color: #dbecf4;
+    margin: 0;
+    min-height: 100%;
+}
+
 .container{
-max-width: 700px;
-margin:auto;
-padding: 20px;
+    max-width: 700px;
+    margin:auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+
 
 }
 
@@ -129,13 +139,15 @@ button:hover{
 }
 
 h2 {
+    display: flex;
+    justify-content: space-around;
     background-color: #91aec4;
+    margin-left: 30px;
     margin-top: 20px;
-    border-radius: 5px;
+    margin-right: 30px;
     height: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: center;
+    border-radius: 5px;
+    
 
 }
 
@@ -193,3 +205,10 @@ color:darkred;
     padding: 15px 10px;
     text-align: center;
 }
+
+@media screen and (max-width: 700px) {
+    header, nav, .titulo, .container, footer {
+      flex-direction: column;
+    }  
+      
+  }

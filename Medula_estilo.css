@@ -96,20 +96,36 @@ body{
 
 .info h3 {
     display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: bold;
+
+}
+
+.info h4 {
+    display: block;
+    margin-left: 20px;
+    line-height: 2;
 }
 
 .info p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.info li {
+    margin-left: 35px;
+    margin-right: 20px;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info li u {
+    font-style: italic;
 }
 
 .footer {
