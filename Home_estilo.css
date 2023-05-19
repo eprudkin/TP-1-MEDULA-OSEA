@@ -35,6 +35,7 @@ li {
 .nav_link {
     border: 1px solid #cadeec; 
     padding: 0 5px; 
+    position: relative;
     background-color:  #cadeec;
     text-decoration: none; 
     text-transform: uppercase; 
@@ -122,8 +123,6 @@ body{
     min-height: 100%;
 }
 
-
-
 .estadisticas1 {
     background-color: #91aec4;
     border-radius: 15px;
@@ -131,6 +130,22 @@ body{
     margin-left: 20px;
     margin-bottom: 20px;
     width: 330px;
+}
+
+.estadisticas p {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 15px;
+    margin-top: 30px;
+    line-height: normal;
+    color: #194569;
+}
+
+.estadisticas h3 {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+    color: white;
 }
 
 .estadisticas2 {
@@ -229,9 +244,11 @@ body{
     flex-direction: row;
 }
 
-@media screen and (max-width: 700px) {
-  header, nav, .slider, .cajas, footer {
-    flex-direction: column;
-  }  
-    
+@media (max-width:700px){
+    .header .nav{
+        flex-direction: column;
+        padding:10px 0px;
+    }
 }
+
+
