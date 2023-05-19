@@ -132,6 +132,11 @@ body{
     width: 330px;
 }
 
+.estadisticas1 b{
+color: coral;
+
+}
+
 .estadisticas p {
     font-size: 40px;
     font-weight: bolder;
@@ -156,6 +161,10 @@ body{
     margin-bottom: 20px;
     width: 330px;
 }
+.estadisticas2 b{
+    color: coral;
+    
+    }
 
 .estadisticas3{
     background-color: #91aec4;
@@ -165,6 +174,10 @@ body{
     margin-bottom: 20px;
     width: 330px;
 }
+.estadisticas3 b{
+    color: coral;
+    
+    }
 
 .testimonios {
     display: block;
@@ -197,6 +210,8 @@ body{
 .footer {
     width: 100%;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer .grupo1 {
