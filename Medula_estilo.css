@@ -99,6 +99,7 @@ body{
 .info h3 {
     display: block;
     margin-left: 20px;
+    margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -112,10 +113,11 @@ body{
 }
 
 .info p {
-    display: inline-block;
+    display: block;
     margin-left: 20px;
     margin-right: 20px;
     font-size: 18px;
+    line-height: 20px
 }
 
 .info li {
@@ -138,11 +140,10 @@ body{
 .footer .grupo1 {
     width: 100%;
     margin: 60px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     grid-gap: 50px;
     padding: 20px 0px;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -168,6 +169,8 @@ body{
 
 .footer .grupo2 {
     padding: 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -178,8 +181,9 @@ body{
     flex-direction: row;
 }
 
+
 @media screen and (max-width: 700px) {
-    header, nav, .cajas, .footer, .info{
+    header, .cajas, .testimonios, footer {
       flex-direction: column;
     }  
       
