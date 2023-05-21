@@ -202,18 +202,15 @@ iframe {
 .footer {
     width: 100%;
     background-color: white;
-    margin: 0;
-    max-width: 400%; 
 }
 
 .footer .grupo1 {
     width: 100%;
-    margin: 60px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
     grid-gap: 50px;
     padding: 20px 0px;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -239,7 +236,17 @@ iframe {
 
 .footer .grupo2 {
     padding: 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
+}
+
+.cajas {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 700px) {
