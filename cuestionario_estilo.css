@@ -24,22 +24,28 @@
 
 ul {
     list-style: none;
+    display: inline-table;
+    text-align: center;
 }
 
 li {
     display: inline;
     padding: 10px;
     text-size-adjust: 20px;
+    text-align: center;
 }
 
 .nav_link {
-    border: 1px solid #cadeec; 
+    border: 1px solid coral; 
     padding: 0 5px; 
     background-color:  #cadeec;
     text-decoration: none; 
     text-transform: uppercase; 
     font-family: 'Lato', sans-serif; 
     border-radius: 5px; 
+    font-family: 'Lato', sans-serif;  
+    display: inline-block;
+    margin: 5px;
 }
 
 .logo{
@@ -74,6 +80,10 @@ nav a:hover{
     }
     nav{
         padding:10px 0px;
+    }
+    .nav_link{
+        width: 50%;
+        padding: 5px;
     }
 }
 
@@ -176,10 +186,11 @@ color:darkred;
 .footer .grupo1 {
     width: 100%;
     margin: 60px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 20px 0px;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -203,23 +214,18 @@ color:darkred;
     color: coral;
 }
 
+.footer .grupo1 img{
+    width: 45px;
+    height: 45px;
+}
+
 .footer .grupo2 {
     padding: 15px 10px;
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
 }
 
-.cajas {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    flex-direction: row;
-}
-
-
 @media screen and (max-width: 700px) {
-    header, .cajas, .testimonios, footer {
+    header, nav, .titulo, .container, footer {
       flex-direction: column;
     }  
       

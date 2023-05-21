@@ -21,22 +21,27 @@
 
 .header .nav .barra {
     list-style: none;
+    display: inline-table;
+    text-align: center;
 }
 
 .header .nav li {
     display: inline;
     padding: 10px;
     text-size-adjust: 20px;
+    text-align: center;
 }
 
 .nav_link {
-    border: 1px solid #cadeec; 
+    border: 1px solid coral; 
     padding: 0 5px; 
     background-color:  #cadeec;
     text-decoration: none; 
     text-transform: uppercase; 
     font-family: 'Lato', sans-serif; 
     border-radius: 5px; 
+    display: inline-block;
+    margin: 5px;
 }
 
 .logo{
@@ -47,6 +52,7 @@
 
 .logo img{
     margin-right: 20px;
+    display: block;
 }
 
 a{
@@ -71,6 +77,10 @@ nav a:hover{
     }
     nav{
         padding:10px 0px;
+    }
+    .nav_link{
+        width: 50%;
+        padding: 5px;
     }
 } 
 
@@ -99,7 +109,6 @@ body{
 .info h3 {
     display: block;
     margin-left: 20px;
-    margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -113,11 +122,10 @@ body{
 }
 
 .info p {
-    display: block;
+    display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
     font-size: 18px;
-    line-height: 20px
 }
 
 .info li {
@@ -140,10 +148,11 @@ body{
 .footer .grupo1 {
     width: 100%;
     margin: 60px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 20px 0px;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -167,10 +176,13 @@ body{
     color: coral;
 }
 
+.footer .grupo1 img{
+    width: 45px;
+    height: 45px;
+}
+
 .footer .grupo2 {
     padding: 15px 10px;
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -181,9 +193,8 @@ body{
     flex-direction: row;
 }
 
-
 @media screen and (max-width: 700px) {
-    header, .cajas, .testimonios, footer {
+    header, nav, .cajas, .footer, .info{
       flex-direction: column;
     }  
       
